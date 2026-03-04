@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">QuizApp_GuennnaniZakaria</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="dont_have_account">Don\'t have an account? </string>
+    <string name="register">Register</string>
+    <string name="create_account">Create Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_account">Already have an account? </string>
+    <string name="login">Login</string>
+    <string name="question_1_5">Question 1/5</string>
+    <string name="question_2_5">Question 2/5</string>
+    <string name="question_3_5">Question 3/5</string>
+    <string name="question_4_5">Question 4/5</string>
+    <string name="question_5_5">Question 5/5</string>
+    <string name="finish">Finish</string>
+    <string name="next">Next</string>
+    <string name="your_score">Your Score</string>
+    <string name="try_again">Try Again</string>
+    <string name="logout">Logout</string>
+    <string name="excellent_job">Excellent Job!</string>
+    <string name="good_effort">Good Effort!</string>
+    <string name="keep_practicing">Keep Practicing!</string>
+</resources>
