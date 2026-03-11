@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.services)
 }
+
 
 android {
     namespace = "com.quizapp_guennnanizakaria"
@@ -32,6 +34,12 @@ android {
 }
 
 dependencies {
+    // Import the Firebase BoM
+    implementation(platform(libs.firebase.bom))
+    // Add the dependency for the Firebase SDK for Google Analytics
+    implementation(libs.firebase.analytics)
+    // Add the dependency for the Firebase Authentication library
+    implementation(libs.firebase.auth)
 
     implementation(libs.appcompat)
     implementation(libs.material)
