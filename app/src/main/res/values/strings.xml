@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">QuizApp_GuennnaniZakaria</string>
+    <string name="app_name">QuizApp</string>
     <string name="welcome_back">Welcome Back</string>
     <string name="sign_in_to_continue">Sign in to continue</string>
     <string name="email">Email</string>

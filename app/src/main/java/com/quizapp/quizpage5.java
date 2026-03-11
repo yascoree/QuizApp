@@ -1,4 +1,6 @@
-package com.quizapp_guennnanizakaria;
+package com.quizapp;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,9 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class quizpage3 extends AppCompatActivity {
+public class quizpage5 extends AppCompatActivity {
     RadioGroup rg;
     RadioButton rb;
     Button bNext;
@@ -19,7 +19,7 @@ public class quizpage3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quizpage3);
+        setContentView(R.layout.activity_quizpage5);
         rg=(RadioGroup) findViewById(R.id.rg);
         bNext=(Button) findViewById(R.id.bNext);
         Intent intent=getIntent();
@@ -35,7 +35,7 @@ public class quizpage3 extends AppCompatActivity {
                     if(rb.getText().toString().equals(RepCorrect)){
                         score+=1;
                     }
-                    Intent intent=new Intent(quizpage3.this, quizpage4.class);
+                    Intent intent=new Intent(quizpage5.this, quizpage6.class);
                     intent.putExtra("score",score);
                     startActivity(intent);
                     finish();

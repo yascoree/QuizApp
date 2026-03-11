@@ -1,4 +1,4 @@
-package com.quizapp_guennnanizakaria;
+package com.quizapp;
 
 import android.content.Intent;
 import android.os.Bundle;

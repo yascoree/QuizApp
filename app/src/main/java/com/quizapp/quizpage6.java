@@ -1,4 +1,4 @@
-package com.quizapp_guennnanizakaria;
+package com.quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
