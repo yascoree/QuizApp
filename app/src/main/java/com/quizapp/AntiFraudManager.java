@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import androidx.core.app.ActivityCompat;
@@ -18,7 +19,15 @@ public class AntiFraudManager {
     };
 
     /**
-     * Vérifie si toutes les permissions nécessaires (Caméra, Micro) sont accordées.
+     * Empêche les captures d'écran et l'enregistrement d'écran.
+     */
+    public static void preventScreenshots(Activity activity) {
+        activity.getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
+                WindowManager.LayoutParams.FLAG_SECURE);
+    }
+
+    /**
+     * Vérifie si toutes les permissions nécessaires sont accordées.
      */
     public static boolean hasPermissions(Context context) {
         for (String permission : REQUIRED_PERMISSIONS) {
@@ -30,17 +39,16 @@ public class AntiFraudManager {
     }
 
     /**
-     * Demande les permissions à l'utilisateur.
+     * Demande les permissions Caméra et Micro.
      */
     public static void requestPermissions(Activity activity) {
         ActivityCompat.requestPermissions(activity, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS);
     }
 
     /**
-     * Logique simple pour détecter si l'utilisateur quitte l'application (Fraude potentielle).
+     * Alerte si l'utilisateur tente de quitter l'application.
      */
-    public static void onAppPaused(Context context) {
-        Toast.makeText(context, "Avertissement : Ne quittez pas l'écran du quiz !", Toast.LENGTH_LONG).show();
-        // Ici, vous pourriez aussi envoyer un log vers Supabase ou Firebase pour signaler l'incident.
+    public static void detectExit(Context context) {
+        Toast.makeText(context, "ALERTE FRAUDE : Tentative de sortie détectée !", Toast.LENGTH_SHORT).show();
     }
 }
