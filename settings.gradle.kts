@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "QuizApp_GuennnaniZakaria"
+rootProject.name = "QuizApp"
 include(":app")
- 
