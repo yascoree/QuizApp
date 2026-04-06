@@ -16,7 +16,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.quizapp_guennnanizakaria.R;
 
 public class Register extends AppCompatActivity {
     EditText etMail, etPassword, etPassword1, etName;

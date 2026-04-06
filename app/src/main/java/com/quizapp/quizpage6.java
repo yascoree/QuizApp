@@ -11,7 +11,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.quizapp_guennnanizakaria.R;
 
 public class quizpage6 extends AppCompatActivity {
     Button bLogout, bTry;
