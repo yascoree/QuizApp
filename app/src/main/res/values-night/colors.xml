@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primaryColor">#BB86FC</color>
-    <color name="primaryLightColor">#D7B7FD</color>
-    <color name="primaryDarkColor">#3700B3</color>
-    <color name="secondaryColor">#03DAC6</color>
-    <color name="secondaryLightColor">#66FFF9</color>
-    <color name="secondaryDarkColor">#018786</color>
-    <color name="primaryTextColor">#000000</color>
-    <color name="secondaryTextColor">#ffffff</color>
-
-    <color name="background_color">#121212</color>
-    <color name="card_background">#1E1E1E</color>
-    <color name="white">#000000</color>
-    <color name="black">#FFFFFF</color>
+    <!-- Force light palette even in night mode -->
+    <color name="primaryColor">#3F51B5</color>
+    <color name="primaryLightColor">#7986CB</color>
+    <color name="primaryDarkColor">#303F9F</color>
+    <color name="secondaryColor">#00BCD4</color>
+    <color name="secondaryLightColor">#B2EBF2</color>
+    <color name="secondaryDarkColor">#0097A7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#212121</color>
+    <color name="background_color">#F5F7FA</color>
+    <color name="card_background">#FFFFFF</color>
 </resources>
